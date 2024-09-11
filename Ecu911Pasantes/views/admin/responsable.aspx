@@ -33,10 +33,16 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group row">
-                                <label class="col-sm-12 col-md-3 col-form-label">Cedula</label>
+                                <label class="col-sm-12 col-md-3 col-form-label">Cédula</label>
                                 <div class="col-sm-12 col-md-9">
-                                    <asp:TextBox ID="txtCedula" TextMode="Number" MaxLength="10" CssClass="form-control" OnTextChanged="TxtCedula_TextChanged" autocomplete="off" AutoPostBack="true" placeholder="Ingrese su cedula" runat="server"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ForeColor="Red" runat="server" ErrorMessage="La cedula es requerida" ControlToValidate="txtCedula" ValidationGroup="Info" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    <asp:TextBox ID="txtCedula" TextMode="SingleLine" MaxLength="10" CssClass="form-control" OnTextChanged="TxtCedula_TextChanged" autocomplete="off" AutoPostBack="true" placeholder="Ingrese su cédula" runat="server"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ForeColor="Red" runat="server" ErrorMessage="La cédula es requerida" ControlToValidate="txtCedula" ValidationGroup="Info" Display="Dynamic"></asp:RequiredFieldValidator>
+        
+                                <asp:RegularExpressionValidator ID="RegexValidatorCedula" runat="server" ControlToValidate="txtCedula"
+                                ValidationGroup="Info" ForeColor="Red" Display="Dynamic"
+                                ErrorMessage="Solo se permiten hasta 10 dígitos"
+                                ValidationExpression="^\d{1,10}$">
+                                    </asp:RegularExpressionValidator>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +131,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-12 col-md-4 col-form-label">Correo electronico</label>
                                 <div class="col-sm-12 col-md-8">
-                                    <asp:TextBox ID="txtEmail" type="text" CssClass="form-control" placeholder="Ingrese el correo electronico" runat="server" autocomplete="off" style="text-transform:uppercase;"></asp:TextBox>
+                                    <asp:TextBox ID="txtEmail" type="text" CssClass="form-control" placeholder="Ingrese el correo electronico" runat="server" autocomplete="off" ></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ForeColor="Red" runat="server" ControlToValidate="txtEmail" ValidationGroup="info" ErrorMessage="El correo electronico es requerido" Display="Dynamic"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
