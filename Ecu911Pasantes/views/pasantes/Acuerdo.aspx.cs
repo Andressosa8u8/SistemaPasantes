@@ -31,8 +31,8 @@ namespace Ecu911Pasantes.views.pasantes
                 if (pasinfo != null)
                 {
                     lblFecha.Text = " " + DateTime.Now.ToString("'a los' <b>d</b> 'días del mes de' <b>MMMM</b> 'del' <b>yyyy</b>");
-                    lblCarrera.Text = pasinfo.Carrera.ToString() + " ";
-                    lblUniversidad.Text = pasinfo.Universidad.ToString();
+                    lblCarrera.Text = pasinfo.Carre_id.ToString() + " ";
+                    lblUniversidad.Text = pasinfo.Uni_id.ToString();
                     lblActividad.Text = pasinfo.Actividad.ToString() + " ";
                 }
             }

@@ -60,6 +60,15 @@ namespace Ecu911Pasantes.views.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
 
         /// <summary>
+        /// Control RegexValidatorCedula.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegexValidatorCedula;
+
+        /// <summary>
         /// Control txtUser.
         /// </summary>
         /// <remarks>
@@ -276,13 +285,13 @@ namespace Ecu911Pasantes.views.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator18;
 
         /// <summary>
-        /// Control txtUniversidad.
+        /// Control ddlUniversidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUniversidad;
+        protected global::System.Web.UI.WebControls.DropDownList ddlUniversidad;
 
         /// <summary>
         /// Control RequiredFieldValidator11.

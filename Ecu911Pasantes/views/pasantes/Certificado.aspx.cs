@@ -46,8 +46,8 @@ namespace Ecu911Pasantes.views.pasantes
                     lblCedula.Text = usuinfo.Cedula.ToString() + " ";
                     LblInicio.Text = " " + pasinfo.Fecha.ToString() + " ";
                     lblFin.Text = " " + DateTime.Now.ToString("<b>d</b> 'de' <b>MMMM</b> 'del' <b>yyyy</b>") + " ";
-                    lblCarrera.Text = pasinfo.Carrera.ToString() + " ";
-                    lblUniversidad.Text = pasinfo.Universidad.ToString();
+                    lblCarrera.Text = pasinfo.Carre_id.ToString() + " ";
+                    lblUniversidad.Text = pasinfo.Uni_id.ToString();
                     lblProyectos.Text = usProyecto.Nombre.ToString();
                     lblHoras.Text = uslabores.Nhoras.ToString() + " ";
                     lblCodigo.Text = pasinfo.CodigoEcu.ToString();

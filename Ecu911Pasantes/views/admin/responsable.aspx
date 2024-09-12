@@ -37,11 +37,11 @@
                                 <div class="col-sm-12 col-md-9">
                                     <asp:TextBox ID="txtCedula" TextMode="SingleLine" MaxLength="10" CssClass="form-control" OnTextChanged="TxtCedula_TextChanged" autocomplete="off" AutoPostBack="true" placeholder="Ingrese su cédula" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ForeColor="Red" runat="server" ErrorMessage="La cédula es requerida" ControlToValidate="txtCedula" ValidationGroup="Info" Display="Dynamic"></asp:RequiredFieldValidator>
-        
-                                <asp:RegularExpressionValidator ID="RegexValidatorCedula" runat="server" ControlToValidate="txtCedula"
-                                ValidationGroup="Info" ForeColor="Red" Display="Dynamic"
-                                ErrorMessage="Solo se permiten hasta 10 dígitos"
-                                ValidationExpression="^\d{1,10}$">
+
+                                    <asp:RegularExpressionValidator ID="RegexValidatorCedula" runat="server" ControlToValidate="txtCedula"
+                                        ValidationGroup="Info" ForeColor="Red" Display="Dynamic"
+                                        ErrorMessage="Solo se permiten hasta 10 dígitos"
+                                        ValidationExpression="^\d{1,10}$">
                                     </asp:RegularExpressionValidator>
                                 </div>
                             </div>

@@ -34,9 +34,9 @@ namespace Ecu911Pasantes.views.admin
                         lblCelular.Text = usuinfo.Celular.ToString();
                         lblUser.Text = usuinfo.Usuario.ToString();
                         lblArea.Text = usuinfo.Area.ToString();
-                        lblCarrera.Text = pasinfo.Carrera.ToString();
+                        lblCarrera.Text = pasinfo.Carre_id.ToString();
                         lblSemestre.Text = pasinfo.Nsemestre.ToString();
-                        lblUniversidad.Text = pasinfo.Universidad.ToString();
+                        lblUniversidad.Text = pasinfo.Uni_id.ToString();
                         lblCodigo.Text = pasinfo.CodigoEcu.ToString();
                         lblActividad.Text = pasinfo.Actividad.ToString();
                         if (pasinfo.Estado.ToString() == "A")

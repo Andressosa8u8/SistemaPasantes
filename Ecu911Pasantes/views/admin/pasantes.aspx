@@ -51,7 +51,7 @@
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Universidad">
                                     <ItemTemplate>
-                                        <asp:Label ID="Universidad" runat="server" Text='<%#Eval("Universidad")%>'></asp:Label>
+                                        <asp:Label ID="Universidad" runat="server" Text='<%#Eval("Uni_id")%>'></asp:Label>
                                     </ItemTemplate>
                                 </asp:TemplateField>
                                 <asp:TemplateField HeaderText="Estado">

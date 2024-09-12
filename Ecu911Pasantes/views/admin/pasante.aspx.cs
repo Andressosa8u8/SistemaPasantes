@@ -2,6 +2,7 @@
 using CapaNegocio;
 using System;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace Ecu911Pasantes.views.admin
 {
@@ -9,6 +10,7 @@ namespace Ecu911Pasantes.views.admin
     {
         private Tbl_Pasantes pasinfo = new Tbl_Pasantes();
         private Tbl_Usuarios usuinfo = new Tbl_Usuarios();
+        private DataClasses1DataContext dc = new DataClasses1DataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -41,17 +43,20 @@ namespace Ecu911Pasantes.views.admin
                         txtDireccion.Text = usuinfo.Direccion.ToString();
                         txtPass.Text = usuinfo.Password.ToString();
                         txtConfirmar.Text = usuinfo.Password.ToString();
+                        ddlUniversidad.SelectedValue = pasinfo.Uni_id.ToString();
                         if (pasinfo != null)
                         {
-                            txtCarrera.Text = pasinfo.Carrera.ToString();
+                            //txtCarrera.Text = pasinfo.Carrera.ToString();
                             txtNivel.Text = pasinfo.Nsemestre.ToString();
-                            txtUniversidad.Text = pasinfo.Universidad.ToString();
+                            //txtUniversidad.Text = pasinfo.Universidad.ToString();
                             txtCodEcu.Text = pasinfo.CodigoEcu.ToString();
                             ddlActividad.SelectedValue = pasinfo.Actividad.ToString();
                             ddlEstado.SelectedValue = pasinfo.Estado.ToString();
+                            
                         }
                     }
                 }
+                cargarUniversidad();
                 Timer1.Enabled = false;
             }
         }
@@ -78,9 +83,9 @@ namespace Ecu911Pasantes.views.admin
 
                 pasinfo = new Tbl_Pasantes
                 {
-                    Carrera = txtCarrera.Text.ToUpper().Trim(),
+                    //Carrera = txtCarrera.Text.ToUpper().Trim(),
                     Nsemestre = Convert.ToInt32(txtNivel.Text),
-                    Universidad = txtUniversidad.Text.ToUpper().Trim(),
+                    //Universidad = txtUniversidad.Text.ToUpper().Trim(),
                     CodigoEcu = txtCodEcu.Text.ToUpper().Trim(),
                     Actividad = ddlActividad.SelectedValue,
                     Usu_id = usuinfo.Usu_id
@@ -114,9 +119,9 @@ namespace Ecu911Pasantes.views.admin
                 usu.Estado = ddlEstado.SelectedValue;
                 cnUsuarios.modify(usu);
 
-                pas.Carrera = txtCarrera.Text.ToUpper().Trim();
+                //pas.Carrera = txtCarrera.Text.ToUpper().Trim();
                 pas.Nsemestre = Convert.ToInt32(txtNivel.Text);
-                pas.Universidad = txtUniversidad.Text.ToUpper().Trim();
+                //pas.Universidad = txtUniversidad.Text.ToUpper().Trim();
                 pas.CodigoEcu = txtCodEcu.Text.ToUpper().Trim();
                 pas.Actividad = ddlActividad.SelectedValue;
                 pas.Estado = ddlEstado.SelectedValue;
@@ -215,6 +220,21 @@ namespace Ecu911Pasantes.views.admin
                     }
                 }
             }
+        }
+
+
+
+        private void cargarUniversidad()
+        {
+            var listauni = dc.Universidades();
+            ddlUniversidad.DataSource = listauni;
+            ddlUniversidad.DataTextField = "Uni_nombre";
+            ddlUniversidad.DataValueField = "Uni_id";
+            ddlUniversidad.DataBind();
+
+            // Elemento predeterminado Seleccione ...
+            ddlUniversidad.Items.Insert(0, new ListItem("Seleccione la universidad", "0"));
+
         }
     }
 }

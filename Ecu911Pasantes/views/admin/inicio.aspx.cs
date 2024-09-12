@@ -47,7 +47,7 @@ namespace Ecu911Pasantes.views.admin
                     foreach (var item in list)
                     {
                         pasantes += item.TotalPasantes + ",";
-                        universidades += "\"" + item.Universidad + "\",";
+                        universidades += "\"" + item.Uni_id + "\",";
                     }
                     pasantes = pasantes.Substring(0, pasantes.Length - 1);
                     universidades = universidades.Substring(0, universidades.Length - 1);
@@ -75,7 +75,7 @@ namespace Ecu911Pasantes.views.admin
                     chartData1 += "<script>";
                     foreach (var item in list)
                     {
-                        carreras += "\"" + item.Carrera + "\",";
+                        carreras += "\"" + item.Carre_id + "\",";
                         pasantes += item.TotalPasantes + ",";
                     }
                     carreras = carreras.Substring(0, carreras.Length - 1);
