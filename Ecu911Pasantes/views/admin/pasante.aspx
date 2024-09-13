@@ -35,7 +35,7 @@
                             <div class="form-group row">
                                 <label class="col-sm-12 col-md-3 col-form-label">Cédula</label>
                                 <div class="col-sm-12 col-md-9">
-                                    <asp:TextBox ID="txtCedula" type="text" MaxLength="10" CssClass="form-control" autocomplete="off" placeholder="Ingrese su cédula" OnTextChanged="txtCedula_TextChanged" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtCedula" type="text" MaxLength="10" CssClass="form-control" autocomplete="off" placeholder="Ingrese su cédula" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ForeColor="Red" runat="server"
                                         ErrorMessage="La cédula es requerida" ControlToValidate="txtCedula"
                                         ValidationGroup="Info" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -176,8 +176,11 @@
                             <div class="form-group row">
                                 <label class="col-sm-12 col-md-4 col-form-label">Carrera</label>
                                 <div class="col-sm-12 col-md-8">
-                                    <asp:TextBox ID="txtCarrera" type="text" CssClass="form-control" placeholder="Ingrese la carrera" runat="server" autocomplete="off" Style="text-transform: uppercase;" required="true"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" ForeColor="Red" runat="server" ErrorMessage="La carrera es requerida" ControlToValidate="txtCarrera" ValidationGroup="Info" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    <%--<asp:TextBox ID="txtCarrera" type="text" CssClass="form-control" placeholder="Ingrese la carrera" runat="server" autocomplete="off" Style="text-transform: uppercase;" required="true"></asp:TextBox>--%>
+                                    <asp:DropDownList ID="ddlCarrera" CssClass="form-control select2" data-toggle="select2" runat="server" required="true">
+                                        <asp:ListItem Value="0">Seleccione la universidad</asp:ListItem>
+                                    </asp:DropDownList>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" ForeColor="Red" runat="server" ErrorMessage="La carrera es requerida" ControlToValidate="ddlCarrera" ValidationGroup="Info" Display="Dynamic"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
                         </div>

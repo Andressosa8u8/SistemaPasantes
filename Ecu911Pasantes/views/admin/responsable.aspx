@@ -152,7 +152,8 @@
                             <div class="form-group row">
                                 <label class="col-sm-12 col-md-4 col-form-label">Area</label>
                                 <div class="col-sm-12 col-md-8">
-                                    <asp:TextBox ID="txtArea" type="text" CssClass="form-control" placeholder="Ingrese el area de trabajo" autocomplete="off" runat="server" style="text-transform:uppercase;"></asp:TextBox>
+                                    <%--<asp:TextBox ID="txtArea" type="text" CssClass="form-control" placeholder="Ingrese el area de trabajo" autocomplete="off" runat="server" style="text-transform:uppercase;"></asp:TextBox>--%>
+                                    
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator10" ForeColor="Red" runat="server" ErrorMessage="La area de trabajo es requerida" ControlToValidate="txtArea" ValidationGroup="Info" Display="Dynamic"></asp:RequiredFieldValidator>
                                 </div>
                             </div>
