@@ -1,0 +1,35 @@
+C:\Users\USER5-PC\Source\Repos\MayckyAnder\Ecu911Pasantes\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\USER5-PC\Source\Repos\MayckyAnder\Ecu911Pasantes\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\USER5-PC\Source\Repos\MayckyAnder\Ecu911Pasantes\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\USER5-PC\Source\Repos\MayckyAnder\Ecu911Pasantes\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\USER5-PC\Source\Repos\MayckyAnder\Ecu911Pasantes\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\USER5-PC\Source\Repos\MayckyAnder\Ecu911Pasantes\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\USER5-PC\Source\Repos\MayckyAnder\Ecu911Pasantes\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\Projects ECU\Nueva carpeta\CapaDatos\bin\Debug\CapaDatos.dll.config
+D:\Projects ECU\Nueva carpeta\CapaDatos\bin\Debug\CapaDatos.dll
+D:\Projects ECU\Nueva carpeta\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\Projects ECU\Nueva carpeta\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\Projects ECU\Nueva carpeta\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\Projects ECU\Nueva carpeta\CapaDatos\obj\Debug\CapaDatos.dll
+D:\Projects ECU\Nueva carpeta\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\GABRIEL.DAVILA\source\repos\Andressosa8u8\SistemaPasantes\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\GABRIEL.DAVILA\source\repos\Andressosa8u8\SistemaPasantes\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\GABRIEL.DAVILA\source\repos\Andressosa8u8\SistemaPasantes\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\GABRIEL.DAVILA\source\repos\Andressosa8u8\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\GABRIEL.DAVILA\source\repos\Andressosa8u8\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\GABRIEL.DAVILA\source\repos\Andressosa8u8\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\GABRIEL.DAVILA\source\repos\Andressosa8u8\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\xampp\htdocs\Pasantes-ECU911\SistemaPasantes\CapaDatos\bin\Debug\CapaDatos.dll.config
+D:\xampp\htdocs\Pasantes-ECU911\SistemaPasantes\CapaDatos\bin\Debug\CapaDatos.dll
+D:\xampp\htdocs\Pasantes-ECU911\SistemaPasantes\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\xampp\htdocs\Pasantes-ECU911\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\xampp\htdocs\Pasantes-ECU911\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\xampp\htdocs\Pasantes-ECU911\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.dll
+D:\xampp\htdocs\Pasantes-ECU911\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Pasantes-ECU911\SistemaPasantes\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Pasantes-ECU911\SistemaPasantes\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Pasantes-ECU911\SistemaPasantes\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Pasantes-ECU911\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Pasantes-ECU911\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Pasantes-ECU911\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Pasantes-ECU911\SistemaPasantes\CapaDatos\obj\Debug\CapaDatos.pdb
